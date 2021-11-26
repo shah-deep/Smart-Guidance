@@ -15,13 +15,6 @@ Here is the link to our website: <br>
 <b><a href="https://smartguidance.herokuapp.com/"> https://smartguidance.herokuapp.com/ </a></b>
 
 
-
-<br><br>
-Or scan QR code to go to the link...
-<p align="center"><img src="https://github.com/shah-deep/Augmented-Reality-using-Vuforia/blob/main/SmartGuidance.jpg" width="300" title="QR code for website"></p>
-
-
-
 <h2>Requirements:</h2>
 
 1. ARCore/ARkit installed in mobile phone
