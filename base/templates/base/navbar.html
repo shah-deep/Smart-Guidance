@@ -1,0 +1,18 @@
+<!-- Navbar -->
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+    <div class="container"><a class="navbar-brand logo" href="{% url 'home' %}">Smart Guidance</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+            id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'chemistry' %}">Chemistry</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'flora' %}">Flora</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'fauna' %}">Fauna</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'biology' %}">Biology</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'machinery' %}">Machinery</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'astronomy' %}">Astronomy</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'default' %}">Other</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

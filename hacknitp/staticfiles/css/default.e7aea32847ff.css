@@ -1,0 +1,31 @@
+.topic{
+    border: 5px solid rgb(201, 197, 197);
+    border-radius: 20px;
+    padding: 10px;
+
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.topic img{
+    width: 50%;
+    height: auto;
+}
+.topic hr{
+    color: none;
+}
+.topic span{
+    font-weight: bolder;
+    font-size: 130%;
+    /* color: antiquewhite; */
+}
+
+.break{
+    height: 40px;
+    width: 100%;
+    color: None;
+}

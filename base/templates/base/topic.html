@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- <html> -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SG2</title>
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <style>
+            iframe {
+                position: relative;
+                width: 100%;
+                height: 75vh;
+            }
+        </style>
+</head>
+
+<body>
+{% include './navbar.html'%}
+    <main class="page project-page">
+        <section class="portfolio-block project">
+            <div class="container">
+                <div class="heading">
+                    <h2>{{topic.headline}}</h2>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-1 info">
+                        <h3>Description</h3>
+                        <p>{{topic.body}}</p>
+                        <!-- <p>Lorem ipsum dapibus dolor non, malesuada mauris. Aliquam eleifend mauris non odio mattis auctor. Aenean sit amet elementum tellus, a facilisis ligula. Pellentesque ac vehicula mauris.</p> -->
+                    </div>
+                    <!-- <div class="col-12 col-md-3 offset-md-1 meta">
+                        <div class="tags"><span class="meta-heading">Tags</span><a href="#">Resource</a><a
+                                href="#">Project</a><span class="meta-heading">Date</span><span>25-04-2017</span></div>
+                    </div> -->
+                </div>
+
+                <div class="image" style="">
+                  <iframe src="https://console.echoar.xyz/webar?key={{topic.key}}&entry={{topic.entry}}">
+                  </iframe>
+                </div>
+
+                <!-- <div class="more-projects">
+                    <h3 class="text-center">More Projects</h3>
+                    <div class="row gallery">
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image2.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image3.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/tech/image4.jpg"></a></div>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="item"><a href="#"><img class="img-fluid scale-on-hover" src="assets/img/nature/image5.jpg"></a></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <!-- <script src="{% static 'js/script.min.css' %}"></script> -->
+</body>
+
+</html>

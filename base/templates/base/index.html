@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>SG2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+
+<body>
+  {% include './navbar.html'%}
+  <main class="page projets-page">
+    <section class="portfolio-block project-no-images">
+      <div class="container">
+        <div class="heading">
+          <h2 style="font-size: 23px;">educating&nbsp; via&nbsp; a&nbsp; new&nbsp; dimension</h2>
+        </div>
+        <div class="row">
+          {% for topic in topics %}
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card-no-image" style="text-align: center;">
+              <h3 style="margin: 10px auto;padding: 0px auto;text-align: center;margin-top: -19px;margin-bottom: 14px;">{{topic.headline}}</h3>
+{% if topic.thumbnail %}
+              <img src="{{topic.thumbnail.url}}" style="text-align: left;width: 185px;margin: 0px auto;/*margin-right: 6px;*//*margin-bottom: 15px;*//*margin-left: 22px;*/">
+{% endif %}
+              <h4 style="text-align: center;margin-top: 17px;">{{topic.body}}</h4><a class="btn btn-outline-primary btn-sm" role="button" href="{% url 'topic' topic.slug %}" style="text-align: center;margin: 0px 66px;">View AR</a>
+              <div class="tags"><a href="#"></a></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+  <!-- <script src="assets/js/script.min.js"></script> -->
+</body>
+
+</html>
